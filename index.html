@@ -1,35 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruits Burst</title>
     <!-- tailwind and daisyUI cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- google fonts lato -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    .font-lato {
-      font-family: 'Lato', sans-serif;
-    }
-  </style>
-  <!-- tailwind custom classes-->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
         }
-      }
-    }
-  </script>
+    </style>
+    <!-- font awesome icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- tailwind custom classes-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-icon': '#F85559FF',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    
+
+<body class="font-lato">
+    <header></header>
+    <main>
+        <!-- meet the team section -->
+        <section class="bg-[#121212] bg-opacity-40 mb-16 lg:mb-32 w-10/12 max-w-screen-sm md:max-w-screen-md lg:max-w-screen-xl  mx-auto lg:h-[590px] rounded-md">
+            <div class="hero min-h-fit md:min-h-[50vh] lg:min-h-[70vh] relative"
+                style="background-image: url(./images/banner3.png);">
+                <div class="w-full h-full bg-[#00000085]">
+
+                    <div class="text-white text-center py-10 mt-32">
+                        <h1 class="text-5xl font-bold">Meet the team section</h1>
+                        <p class="pt-4 px-5 lg:px-60">Contrary to popular belief, is not simply random text. It has
+                            roots in a piece
+                            of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="gap-10 pl-32 pr-28 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+                        <!-- team 1 -->
+                        <div class=" text-center py-6">
+                            <img class="m-auto" src="images/member1.png" alt="">
+                            <h2 class="text-white text-xl pt-3">Awlad Hossain</h2>
+                            <p class="text-white">Fruits Expert</p>
+                            <div class="flex gap-2 justify-center py-3">
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-facebook text-white"
+                                        ></i></div>
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-twitter text-white"
+                                        ></i>
+                                </div>
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-instagram text-white"
+                                        ></i></div>
+                            </div>
+                        </div>
+                        <!-- team 2 -->
+                        <div class=" text-center py-6">
+                            <img class="m-auto" src="images/member2.png" alt="">
+                            <h1 class="text-white text-xl pt-3">Safia Chowdhury</h1>
+                            <p class="text-white">Fruits Expert</p>
+                            <div class="flex gap-2 justify-center py-3">
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-facebook text-white"
+                                        ></i></div>
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-twitter text-white"
+                                        ></i>
+                                </div>
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-instagram text-white"
+                                        ></i></div>
+                            </div>
+                        </div>
+                        <!-- team 3 -->
+                        <div class=" text-center py-6">
+                            <img class="m-auto" src="images/member3.png" alt="">
+                            <h1 class="text-white text-xl pt-3">Rokib Hossain</h1>
+                            <p class="text-white">Fruits Expert</p>
+                            <div class="flex gap-2 justify-center py-3">
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-facebook text-white"
+                                        ></i></div>
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-twitter text-white"
+                                        ></i>
+                                </div>
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-instagram text-white"
+                                        ></i></div>
+                            </div>
+                        </div>
+                        <!-- team-4 -->
+                        <div class=" text-center py-6">
+                            <img class="m-auto" src="images/member4.png" alt="">
+                            <h1 class="text-white text-xl pt-3">Chaity</h1>
+                            <p class="text-white">Fruits Expert</p>
+                            <div class="flex gap-2 justify-center py-3">
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-facebook text-white"
+                                        ></i></div>
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-twitter text-white"
+                                        ></i>
+                                </div>
+                                <div class="bg-bg-icon py-1 px-3 rounded-full"><i class="fa fa-instagram text-white"
+                                        ></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer footer-center p-9 bg-[#121212] text-base-content rounded">
+        <div class="w-[200px] items-center flex mt-5">
+            <img class="w-[40px] mr-2" src="./images/logo.png" alt="">
+            <span class="text-2xl text-white font-extrabold">Fruit Burst</span>
+        </div>
+        <div class="grid  grid-cols-3 md:grid-flow-col gap-6 text-white">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-4">
+                <div class="py-1 bg-orange-500 px-3 rounded-full"><i class="fa fa-facebook  text-white"></i>
+                </div>
+                <div class="py-1 bg-orange-500 px-3 rounded-full"><i class="fa fa-twitter text-white"></i>
+                </div>
+                <div class="py-1 bg-orange-500 px-3 rounded-full"><i class="fa fa-instagram text-white" ></i>
+                </div>
+                <div class="py-1 bg-orange-500 px-3 rounded-full"><i class="fa-brands fa-apple text-white" ></i>
+                </div>
+                <div class="py-1 bg-orange-500 px-3 rounded-full"><i class="fa-brands fa-youtube text-white" ></i>
+                </div>
+                <div class="py-1 bg-orange-500 px-3 rounded-full"><i class="fa-brands fa-linkedin text-white" ></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
